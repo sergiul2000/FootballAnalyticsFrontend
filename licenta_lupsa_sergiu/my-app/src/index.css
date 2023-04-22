@@ -39,12 +39,12 @@ code {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 0rem;
+  width: 0.01rem;
 }
 /* ::-webkit-scrollbar-thumb {
   background-color: rgba(27, 27, 27, 0.4);
   border-radius: 3px;
 }
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {   
   background: transparent;
 } */

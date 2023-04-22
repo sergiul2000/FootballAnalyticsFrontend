@@ -1,21 +1,18 @@
 // import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
-import TableComp from "./components/table/TableComponent";
 import "./App.css";
 
-import MyNavbar from "./navbar.js";
 import React from "react";
+import { Route, Routes } from "react-router";
+import PlayerDefensive from "./components/table/PlayerDefensive";
 // import TableComponent from "./table";
 
 function App() {
   return (
-    <>
-      <header>
-        <MyNavbar />
-      </header>
-      <TableComp />
-      {/* <div className="paragraph"><TableComponent /></div> */}
-    </>
+    <Routes>
+      <Route path="/playerDefensive" element={<PlayerDefensive/>}/>
+    </Routes>
+
   );
 }
 
