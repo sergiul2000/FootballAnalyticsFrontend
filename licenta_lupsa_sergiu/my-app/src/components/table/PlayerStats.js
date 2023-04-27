@@ -10,10 +10,11 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 import MyNavbar from "../../navbar.js";
 import React from "react";
+import PlayerSummaryComponent from "./PlayerSummaryComponent";
 // import TableComponent from "./table";
 
 function PlayerStats() {
-  const [componentToShow, setComponentToShow] = useState();
+  const [componentToShow, setComponentToShow] = useState('summary');
   
 const handleComponentChange = (event) => {
   setComponentToShow(event.target.value);
@@ -28,11 +29,11 @@ switch(componentToShow) {
   case 'offensive':
     componentToRender = <PlayerOffensiveComponent />;
     break;
-  // case 'C':
-  //   componentToRender = <ComponentC />;
-  //   break;
+  case 'summary':
+    componentToRender = <PlayerSummaryComponent />;
+    break;
   default:
-    componentToRender = <PlayerDefensiveComponent />;
+    componentToRender = <PlayerSummaryComponent />;
 }
   return (
     <>
@@ -44,7 +45,7 @@ switch(componentToShow) {
       <select value={componentToShow} onChange={handleComponentChange}>
           <option value="defensive">Defensive Stats</option>
           <option value="offensive">Offensive Stats</option>
-          <option value="C">Component C</option>
+          <option value="summary">Summary</option>
         </select>
         {/* <Select labelId="label" id="select" value="20">
           <MenuItem value="defensive">Defensive Stats</MenuItem>
