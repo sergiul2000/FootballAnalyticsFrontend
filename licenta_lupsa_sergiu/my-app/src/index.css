@@ -22,13 +22,13 @@ code {
   width: 50%;
   border: 3px solid green;
   padding: 10px; */
-  max-width: 80%;
+  max-width: 90%;
   max-height: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 90%;
   overflow: scroll;
   /* overflow-x: hidden; */
 }
@@ -48,3 +48,17 @@ code {
 ::-webkit-scrollbar-track {   
   background: transparent;
 } */
+
+@media (max-width: 450px) {
+  .tableContainer {
+    max-width: 90%;
+    max-height: 80%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    overflow: scroll;
+    /* overflow-x: hidden; */
+  }
+}

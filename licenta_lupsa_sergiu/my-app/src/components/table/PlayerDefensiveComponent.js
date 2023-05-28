@@ -6,15 +6,15 @@ import "../../App.css";
 import axios from 'axios';
 
 
-function PlayerDefensiveComponent() {
+function PlayerDefensiveComponent({teamName,yearStart}) {
   const [data,setData] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:8080/football-analytics/playerDefensive/Real Madrid/2010').then((response)=>{
+    axios.get('http://localhost:8080/football-analytics/playerDefensive/'+teamName+'/'+yearStart).then((response)=>{
       setData(response.data)
       console.log(response.data)
     })
-  },[])
+  },[teamName,yearStart])
   
   let nr_of_element = 0;
   const text = {
@@ -29,6 +29,9 @@ function PlayerDefensiveComponent() {
         <thead>
           <tr className="tableHead">
             <th scope="col">Plyer name</th>
+            <th scope="col">Team</th>
+            <th scope="col">Year start</th>
+            <th scope="col">Year end</th>
             <th scope="col">Clearances / game</th>
             <th scope="col">Dribbled past / game</th>
             <th scope="col">Fouls / game</th>
@@ -38,9 +41,6 @@ function PlayerDefensiveComponent() {
             <th scope="col">Outfielder_blocks / game</th>
             <th scope="col">Own_goals</th>
             <th scope="col">Tackles / game</th>
-            <th scope="col">Team</th>
-            <th scope="col">Year start</th>
-            <th scope="col">Year end</th>
           </tr>
         </thead>
         <tbody>          
@@ -50,6 +50,9 @@ function PlayerDefensiveComponent() {
               <PlayerDefensiveContent
               key={player.id_player}
               player_name={player.player_name}
+              team_name={player.team_name}
+              year_start={player.year_start}
+              year_end={player.year_end}
               clearances_per_game={player.clearances_per_game}
               dribbled_past_per_game={player.dribbled_past_per_game}
               fouls_per_game={player.fouls_per_game}
@@ -59,9 +62,6 @@ function PlayerDefensiveComponent() {
               outfielder_blocks_per_game={player.outfielder_blocks_per_game}
               own_goals={player.own_goals}
               tackles_per_game={player.tackles_per_game}
-              team_name={player.team_name}
-              year_start={player.year_start}
-              year_end={player.year_end}
                 // age={player.age}
               />
             );

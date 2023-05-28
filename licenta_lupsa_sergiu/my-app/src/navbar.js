@@ -16,40 +16,47 @@ function MyNavbar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Leagues" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
-                <FaFish />
-                Premier League
+              <NavDropdown.Item href="/leagueStats">
+                League table
               </NavDropdown.Item>
+              <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.2">
-                <FaGuitar />
-                La Liga
+                Simple Pythagorean
               </NavDropdown.Item>
+              <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.3">
-                <GiRooster />
-                Ligue 1
+                Extended Pythagorean
               </NavDropdown.Item>
               {/* <NavDropdown.Divider /> */}
-              <NavDropdown.Item href="#action/3.4">
+              {/* <NavDropdown.Item href="#action/3.4">
                 <FaBeer />
                 Bundensliga
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.5">
                 <FaPizzaSlice />
                 Serie A
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
-            <Nav.Link href="#teams">Teams</Nav.Link>
-            <Nav.Link href="#players">Players</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.6">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.7">
-                Another action
+            <NavDropdown title="Players" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="/playerStats">
+                Players stats
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.8">Something</NavDropdown.Item>
+              {/* <NavDropdown.Divider />
+              <NavDropdown.Item href="/playerStats">
+                La liga
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.9">
-                Separated link
+              <NavDropdown.Item href="/playerStats">
+                Ligue 1
               </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/playerStats">
+                Serie A
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/playerStats">
+                Bundesliga
+              </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
           <Nav>

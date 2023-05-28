@@ -6,15 +6,15 @@ import axios from 'axios';
 import PlayerSummaryContent from "./PlayerSummaryContent";
 
 
-function PlayerSummaryComponent() {
+function PlayerSummaryComponent({teamName,yearStart}) {
   const [data,setData] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:8080/football-analytics/playerSummary/Real Madrid/2010').then((response)=>{
+    axios.get('http://localhost:8080/football-analytics/playerSummary/'+teamName+'/'+yearStart).then((response)=>{
       setData(response.data)
       console.log(response.data)
     })
-  },[])
+  },[teamName,yearStart])
   
   let nr_of_element = 0;
   return (
