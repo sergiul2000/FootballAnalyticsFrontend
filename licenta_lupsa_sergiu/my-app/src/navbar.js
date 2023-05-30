@@ -4,8 +4,8 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { FaFish, FaPizzaSlice, FaBeer, FaGuitar } from "react-icons/fa";
-import { GiRooster } from "react-icons/gi";
+// import { FaFish, FaPizzaSlice, FaBeer, FaGuitar } from "react-icons/fa";
+// import { GiRooster } from "react-icons/gi";
 
 function MyNavbar() {
   return (
@@ -20,43 +20,18 @@ function MyNavbar() {
                 League table
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="/simplePythagorean">
                 Simple Pythagorean
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.3">
+              <NavDropdown.Item href="/extendedPythagorean">
                 Extended Pythagorean
               </NavDropdown.Item>
-              {/* <NavDropdown.Divider /> */}
-              {/* <NavDropdown.Item href="#action/3.4">
-                <FaBeer />
-                Bundensliga
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.5">
-                <FaPizzaSlice />
-                Serie A
-              </NavDropdown.Item> */}
             </NavDropdown>
             <NavDropdown title="Players" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/playerStats">
                 Players stats
               </NavDropdown.Item>
-              {/* <NavDropdown.Divider />
-              <NavDropdown.Item href="/playerStats">
-                La liga
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/playerStats">
-                Ligue 1
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/playerStats">
-                Serie A
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/playerStats">
-                Bundesliga
-              </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
           <Nav>

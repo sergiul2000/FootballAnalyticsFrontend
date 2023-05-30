@@ -1,6 +1,5 @@
 // import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
-// import LeagueTableComponent from "./LeagueTableComponent";
 import "../../App.css";
 import  { useState } from "react";
 // import Select from '@material-ui/core/Select';
@@ -9,10 +8,10 @@ import  { useState } from "react";
 
 import MyNavbar from "../../navbar.js";
 import React from "react";
-import SimplePythagoreanComponent from "./SimplePythagoreanComponent";
+import ExtendedPythagoreanComponent from "./ExtendedPythagoreanComponent";
 // import TableComponent from "./table";
 
-function SimplePythagoreanStats() {
+function ExtendedPythagoreanStats() {
   const [leagueToShow, setLeagueToShow] = useState('epl');
   const [yearToShow, setYearToShow] = useState(2021);
   
@@ -27,11 +26,10 @@ const handleYearChange = (event) => {
 }
 
 let componentToRender;
- componentToRender = <SimplePythagoreanComponent
+ componentToRender = <ExtendedPythagoreanComponent
 leagueName={leagueToShow}
 yearStart={yearToShow}/>
 
-// let componentToRender;
   return (
     <>
       <header>
@@ -67,4 +65,4 @@ yearStart={yearToShow}/>
   );
 }
 
-export default SimplePythagoreanStats;
+export default ExtendedPythagoreanStats;

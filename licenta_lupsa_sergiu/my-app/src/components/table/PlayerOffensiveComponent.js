@@ -17,7 +17,7 @@ function PlayerOffensiveComponent({teamName,yearStart}) {
     })
   },[teamName,yearStart])
   
-  let nr_of_element = 0;
+  // let nr_of_element = 0;
   return (
     // <div className="containerContainer">
     <div className=" tableContainer ">
@@ -38,7 +38,7 @@ function PlayerOffensiveComponent({teamName,yearStart}) {
         </thead>
         <tbody>          
           {data.map((player) => {
-            nr_of_element += 1;
+            // nr_of_element += 1;
             return (
               <PlayerOffensiveContent
               key={player.id_player}

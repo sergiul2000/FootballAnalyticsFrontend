@@ -16,7 +16,7 @@ function LeagueTableComponent({leagueName,yearStart}) {
     })
   },[leagueName,yearStart])
   
-  let nr_of_element = 0;
+  // let nr_of_element = 0;
   return (
     // <div className="containerContainer">
     <div className=" tableContainer ">
@@ -49,7 +49,7 @@ function LeagueTableComponent({leagueName,yearStart}) {
         </thead>
         <tbody>          
           {data.map((leagueTable) => {
-            nr_of_element += 1;
+            // nr_of_element += 1;
             return (
               <LeagueTableContent
               key={leagueTable.league_table_id}

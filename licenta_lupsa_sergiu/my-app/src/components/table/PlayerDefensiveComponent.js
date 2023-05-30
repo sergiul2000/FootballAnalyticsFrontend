@@ -16,7 +16,7 @@ function PlayerDefensiveComponent({teamName,yearStart}) {
     })
   },[teamName,yearStart])
   
-  let nr_of_element = 0;
+  // let nr_of_element = 0;
   const text = {
     id_player_text: "id player",
     player_name_text: "player name",
@@ -45,7 +45,7 @@ function PlayerDefensiveComponent({teamName,yearStart}) {
         </thead>
         <tbody>          
           {data.map((player) => {
-            nr_of_element += 1;
+            // nr_of_element += 1;
             return (
               <PlayerDefensiveContent
               key={player.id_player}
