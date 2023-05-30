@@ -1,15 +1,8 @@
-// import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
 import "../../App.css";
 import  { useState } from "react";
-// import Select from '@material-ui/core/Select';
-// import MenuItem from '@material-ui/core/MenuItem';
-
-
-import MyNavbar from "../../navbar.js";
 import React from "react";
 import ExtendedPythagoreanComponent from "./ExtendedPythagoreanComponent";
-// import TableComponent from "./table";
 
 function ExtendedPythagoreanStats() {
   const [leagueToShow, setLeagueToShow] = useState('epl');
@@ -18,11 +11,9 @@ function ExtendedPythagoreanStats() {
 
 const handleLeagueChange = (event) => {
   setLeagueToShow(event.target.value);
-  // console.log(event.target.value)
 }
 const handleYearChange = (event) => {
   setYearToShow(event.target.value);
-  // console.log(event.target.value)
 }
 
 let componentToRender;
@@ -32,11 +23,8 @@ yearStart={yearToShow}/>
 
   return (
     <>
-      <header>
-        <MyNavbar />
-      </header>
-      {/* <PlayerDefensiveComponent /> */}
       <div className="background">
+        <div className="filtersList">
       <select value={leagueToShow} onChange={handleLeagueChange}>
           <option value="epl">Premiere league</option>
           <option value="la liga">La liga</option>
@@ -54,13 +42,9 @@ yearStart={yearToShow}/>
           <option value="2020">2020</option>
           <option value="2021">2021</option>
         </select>
-        {/* <Select labelId="label" id="select" value="20">
-          <MenuItem value="defensive">Defensive Stats</MenuItem>
-          <MenuItem value="20">Twenty</MenuItem>
-        </Select> */}
+        </div>
         {componentToRender}
       </div>
-      {/* <div className="paragraph"><TableComponent /></div> */}
     </>
   );
 }

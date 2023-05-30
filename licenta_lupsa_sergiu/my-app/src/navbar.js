@@ -9,7 +9,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function MyNavbar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+    <Navbar className="navbarClass" collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
       <Container>
         <Navbar.Brand href="#home">Football-Analytics</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -13,15 +13,6 @@ code {
 }
 
 .tableContainer {
-  /* margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 100vh; */
-  /* margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px; */
   max-width: 90%;
   max-height: 80%;
   position: absolute;
@@ -35,6 +26,12 @@ code {
 .tableHead {
   position: sticky;
   top: 0;
+}
+
+
+.filtersList{
+  display: flex;
+  justify-content: center;
 }
 
 /* Scrollbar */
@@ -61,4 +58,17 @@ code {
     overflow: scroll;
     /* overflow-x: hidden; */
   }
+  .filtersList{
+    /* display: flex; */
+    justify-content: left;
+    max-width: 100%;
+    position: relative;
+    transform: translate(0%, 0%);
+  }
+  /* .header{
+    justify-content: left;
+    max-width: 100%;
+    position: relative;
+    transform: translate(0%, 0%);
+  } */
 }

@@ -10,13 +10,15 @@ function PlayerSummaryComponent({teamName,yearStart}) {
   const [data,setData] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:8080/football-analytics/playerSummary/'+teamName+'/'+yearStart).then((response)=>{
-      setData(response.data)
-      console.log(response.data)
-    })
+    if(teamName){
+      axios.get('http://localhost:8080/football-analytics/playerSummary/'+teamName+'/'+yearStart).then((response)=>{
+        setData(response.data)
+        console.log(response.data)
+      })
+    }
   },[teamName,yearStart])
   
-  let nr_of_element = 0;
+  // let nr_of_element = 0;
   return (
     // <div className="containerContainer">
     <div className=" tableContainer ">
@@ -45,7 +47,7 @@ function PlayerSummaryComponent({teamName,yearStart}) {
         </thead>
         <tbody>          
           {data.map((player) => {
-            nr_of_element += 1;
+            // nr_of_element += 1;
             return (
               <PlayerSummaryContent
               key={player.id_player}
