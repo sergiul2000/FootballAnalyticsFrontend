@@ -42,7 +42,7 @@ function PlayerSummaryComponent({teamName,yearStart}) {
             <th scope="col">Pass success percentage</th>
             <th scope="col">Aerials won</th>
             <th scope="col">Man of the match</th>
-            <th scope="col">Rating</th>
+            <th style={{backgroundColor: 'var(--beaver1)'}}scope="col">Rating</th>
           </tr>
         </thead>
         <tbody>          

@@ -1,4 +1,14 @@
 
+:root {
+  --beaver1: #867163;
+  --raisinBlack: #232529;
+  --beaver2: #9A8675;
+  --gunmetal: #212938;
+  --khaki: #C1A792;
+  --champagne:#F0DEC5;
+  --jet:#393738;
+  --charcoal:#495063;
+}
 .App {
   text-align: center;
 }
@@ -41,3 +51,14 @@
 body{
   background-image: url(./grass.jpg);
 }
+
+.centerText{
+  text-align: center;
+  /* justify-Content: "flex-end" */
+}
+/* #867163 */
+/* #232529 */
+/* #9A8675 */
+/* #212938 */
+/* #C1A792 */
+

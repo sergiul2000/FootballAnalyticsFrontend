@@ -11,26 +11,26 @@ dc,odc,xgoals,xgoalsAgainst}) {
     <tr>
       {/* <td scope="col">{defensive_id}</td> */}
       <td scope="col">{team_name}</td>
-      <td scope="col">{league_name}</td>
-      <td scope="col">{year_start}</td>
-      <td scope="col">{year_end}</td>
+      <td className="centerText" scope="col">{league_name}</td>
+      <td className="centerText" scope="col">{year_start}</td>
+      <td className="centerText" scope="col">{year_end}</td>
       {/* <td scope="col">{id_player}</td> */}
-      <td scope="col">{matches}</td>
-      <td scope="col">{wins}</td>
-      <td scope="col">{draws}</td>
-      <td scope="col">{loses}</td>
-      <td scope="col">{goals}</td>
-      <td scope="col">{goalsAgainst}</td>
-      <td scope="col">{pts}</td>
-      <td scope="col">{npxGoals}</td>
-      <td scope="col">{npxGoalsAgainst}</td>
-      <td scope="col">{npxGoalsDifference}</td>
-      <td scope="col">{ppda}</td>
-      <td scope="col">{oppda}</td>
-      <td scope="col">{dc}</td>
-      <td scope="col">{odc}</td>
-      <td scope="col">{xgoals}</td>
-      <td scope="col">{xgoalsAgainst}</td>
+      <td className="centerText" scope="col">{matches}</td>
+      <td className="centerText" scope="col">{wins}</td>
+      <td className="centerText" scope="col">{draws}</td>
+      <td className="centerText" scope="col">{loses}</td>
+      <td className="centerText" scope="col">{goals}</td>
+      <td className="centerText" scope="col">{goalsAgainst}</td>
+      <td className="centerText" scope="col">{pts}</td>
+      <td className="centerText" scope="col">{npxGoals}</td>
+      <td className="centerText" scope="col">{npxGoalsAgainst}</td>
+      <td className="centerText" scope="col">{npxGoalsDifference}</td>
+      <td className="centerText" scope="col">{ppda}</td>
+      <td className="centerText" scope="col">{oppda}</td>
+      <td className="centerText" scope="col">{dc}</td>
+      <td className="centerText" scope="col">{odc}</td>
+      <td className="centerText" scope="col">{xgoals}</td>
+      <td className="centerText" scope="col">{xgoalsAgainst}</td>
     </tr>
   );
 }

@@ -34,7 +34,7 @@ function LeagueTableComponent({leagueName,yearStart}) {
             <th scope="col">Loses</th>
             <th scope="col">Goals</th>
             <th scope="col">GoalsAgainst</th>
-            <th scope="col">Points</th>
+            <th style={{backgroundColor: 'var(--beaver1)'}}scope="col">Points</th>
             <th scope="col">xGoals excl. pen. & OG</th>
             <th scope="col">xGoals against excl. pen. & OG</th>
             <th scope="col">xGoals difference excl. pen. & OG</th>

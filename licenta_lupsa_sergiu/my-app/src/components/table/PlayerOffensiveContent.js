@@ -10,15 +10,15 @@ function PlayerOffensiveContent({
     <tr>
       {/* <td scope="col">{defensive_id}</td> */}
       <td scope="col">{player_name}</td>
-      <td scope="col">{team_name}</td>
-      <td scope="col">{year_start}</td>
-      <td scope="col">{year_end}</td>
-      <td scope="col">{dribbles_per_game}</td>
-      <td scope="col">{fouled_per_game}</td>
-      <td scope="col">{offsides_per_game}</td>
-      {/* <td scope="col">{id_player}</td> */}
-      <td scope="col">{dispossessed_per_game}</td>
-      <td scope="col">{bad_control_per_game}</td>
+      <td className="centerText" scope="col">{team_name}</td>
+      <td className="centerText" scope="col">{year_start}</td>
+      <td className="centerText" scope="col">{year_end}</td>
+      <td className="centerText" scope="col">{dribbles_per_game}</td>
+      <td className="centerText" scope="col">{fouled_per_game}</td>
+      <td className="centerText" scope="col">{offsides_per_game}</td>
+      {/* <td className="centerText" scope="col">{id_player}</td> */}
+      <td className="centerText" scope="col">{dispossessed_per_game}</td>
+      <td className="centerText" scope="col">{bad_control_per_game}</td>
     </tr>
   );
 }

@@ -16,12 +16,6 @@ function PlayerDefensiveComponent({teamName,yearStart}) {
     })
   },[teamName,yearStart])
   
-  // let nr_of_element = 0;
-  const text = {
-    id_player_text: "id player",
-    player_name_text: "player name",
-    age_text: "age text",
-  };
   return (
     // <div className="containerContainer">
     <div className=" tableContainer ">

@@ -7,6 +7,9 @@ import "../../App.css";
 import  { useState ,useEffect} from "react";
 import axios from "axios";
 
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 // import Select from '@material-ui/core/Select';
 // import MenuItem from '@material-ui/core/MenuItem';
 
@@ -87,41 +90,69 @@ switch(componentToShow) {
     <>
       <div className="background">
         <div className="filtersList">
-          <select value={leagueToShow} onChange={handleLeagueChange}>
-              <option value="epl">Premiere league</option>
-              <option value="la liga">La liga</option>
-              <option value="ligue 1">Ligue 1</option>
-              <option value="serie a">Serie A</option>
-              <option value="bundesliga">Bundesliga</option>
-          </select>
-          <select value={teamToShow} onChange={handleTeamChange}>
+        <FormControl >
+          <Select sx={{ backgroundColor:'var(--charcoal)',color:'white' }}
+            id="demo-simple-select"
+            value={leagueToShow}
+            onChange={handleLeagueChange}
+          >
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={"epl"}>Premiere league</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={"la liga"}>La liga</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={"ligue 1"}>Ligue 1</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={"serie a"}>Serie A</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={"bundesliga"}>Bundesliga</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl >
+          <Select sx={{ backgroundColor:'var(--charcoal)',color:'white' }}
+            id="demo-simple-select"
+            value={yearToShow}
+            onChange={handleYearChange}
+          >
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={2014}>2014</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={2015}>2015</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={2016}>2016</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={2017}>2017</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={2018}>2018</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={2019}>2019</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={2020}>2020</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={2021}>2021</MenuItem>
+          </Select>
+        </FormControl>
+
+        <FormControl >
+          <Select sx={{ backgroundColor:'var(--charcoal)',color:'white' }}
+            id="demo-simple-select"
+            value={teamToShow}
+            onChange={handleTeamChange}
+          >{     data.map(iterator=>{
+            return (
+            <MenuItem divider={true} sx={{justifyContent:"center"}} key={iterator} value={iterator}>{iterator}</MenuItem>
+            // <option key={iterator} value={iterator}>{iterator}</option>
+            );}
+          )}
+          </Select>
+        </FormControl>
+        
+          {/* <select value={teamToShow} onChange={handleTeamChange}>
           {     data.map(iterator=>{
                 return (
                 <option key={iterator} value={iterator}>{iterator}</option>
                 );}
               )}
-          </select>
-          <select value={yearToShow} onChange={handleYearChange}>
-              <option value="2009">2009</option>
-              <option value="2010">2010</option>
-              <option value="2011">2011</option>
-              <option value="2012">2012</option>
-              <option value="2013">2013</option>
-              <option value="2014">2014</option>
-              <option value="2015">2015</option>
-              <option value="2016">2016</option>
-              <option value="2017">2017</option>
-              <option value="2018">2018</option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
-          </select>
-          <select value={componentToShow} onChange={handleComponentChange}>
-              <option value="defensive">Defensive Stats</option>
-              <option value="passing">Passing Stats</option>
-              <option value="offensive">Offensive Stats</option>
-              <option value="summary">Summary</option>
-          </select>
+          </select> */}
+        <FormControl >
+          <Select sx={{ backgroundColor:'var(--charcoal)',color:'white' }}
+            id="demo-simple-select"
+            value={componentToShow}
+            onChange={handleComponentChange}
+          >
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={"defensive"}>Defensive Stats</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={"passing"}>Passing Stats</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={"offensive"}>Offensive Stats</MenuItem>
+            <MenuItem divider={true} sx={{justifyContent:"center"}} value={"summary"}>Summary</MenuItem>
+          </Select>
+        </FormControl>
         </div>
         {componentToRender}
       </div>

@@ -11,18 +11,18 @@ function PlayerDefensiveContent({
     <tr>
       {/* <td scope="col">{defensive_id}</td> */}
       <td scope="col">{player_name}</td>
-      <td scope="col">{team_name}</td>
-      <td scope="col">{year_start}</td>
-      <td scope="col">{year_end}</td>
-      <td scope="col">{clearances_per_game}</td>
-      <td scope="col">{dribbled_past_per_game}</td>
-      <td scope="col">{fouls_per_game}</td>
-      {/* <td scope="col">{id_player}</td> */}
-      <td scope="col">{interceptions_per_game}</td>
-      <td scope="col">{offsides_won_per_game}</td>
-      <td scope="col">{outfielder_blocks_per_game}</td>
-      <td scope="col">{own_goals}</td>
-      <td scope="col">{tackles_per_game}</td>
+      <td className="centerText" scope="col">{team_name}</td>
+      <td className="centerText" scope="col">{year_start}</td>
+      <td className="centerText" scope="col">{year_end}</td>
+      <td className="centerText" scope="col">{clearances_per_game}</td>
+      <td className="centerText" scope="col">{dribbled_past_per_game}</td>
+      <td className="centerText" scope="col">{fouls_per_game}</td>
+      {/* <td className="centerText" scope="col">{id_player}</td> */}
+      <td className="centerText" scope="col">{interceptions_per_game}</td>
+      <td className="centerText" scope="col">{offsides_won_per_game}</td>
+      <td className="centerText" scope="col">{outfielder_blocks_per_game}</td>
+      <td className="centerText" scope="col">{own_goals}</td>
+      <td className="centerText" scope="col">{tackles_per_game}</td>
     </tr>
   );
 }

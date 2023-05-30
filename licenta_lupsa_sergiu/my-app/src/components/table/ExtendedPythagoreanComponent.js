@@ -34,12 +34,12 @@ function ExtendedPythagoreanComponent({leagueName,yearStart}) {
             <th scope="col">Loses</th>
             <th scope="col">Goals</th>
             <th scope="col">GoalsAgainst</th>
-            <th scope="col">Points</th>
+            <th style={{backgroundColor: 'var(--beaver1)'}}scope="col">Points</th>
             <th scope="col">Estimated Wins</th>
             <th scope="col">Estimated Draws</th>
             <th scope="col">Estimated Loses</th>
             <th scope="col">Estimated Points Extended Pythagorean</th>
-            <th scope="col">Delta Points Simple Pythagorean</th>            
+            <th style={{backgroundColor: 'var(--beaver1)'}}scope="col">Delta Points Extended Pythagorean</th>            
           </tr>
         </thead>
         <tbody>          
