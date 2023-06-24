@@ -36,13 +36,13 @@ function MyNavbar() {
           </Nav>
           <Nav>
             <Form className="d-flex">
-              <Form.Control
+              {/* <Form.Control
                 type="search"
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
-              />
-              <Button variant="secondary">Search</Button>
+              /> */}
+              <Button variant="secondary" href="/">Rating Prediction</Button>
             </Form>
             <Nav.Link href="#deets">Sign in</Nav.Link>
             <Nav.Link href="#memes">Log in</Nav.Link>

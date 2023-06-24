@@ -8,6 +8,7 @@ import PlayerStats from "./components/table/PlayerStats";
 import LeagueTableStats from "./components/table/LeagueTableStats";
 import SimplePythagoreanStats from "./components/table/SimplePythagoreanStats";
 import ExtendedPythagoreanStats from "./components/table/ExtendedPythagoreanStats";
+import RatingPredictor from "./components/RatingPredictor";
 import MyNavbar from "./navbar";
 // import TableComponent from "./table";
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/leagueStats" element={<LeagueTableStats/>}/>
         <Route path="/simplePythagorean" element={<SimplePythagoreanStats/>}/>
         <Route path="/extendedPythagorean" element={<ExtendedPythagoreanStats/>}/>
+        <Route path="/" element={<RatingPredictor/>}/>
       </Routes>
     </>
   );
