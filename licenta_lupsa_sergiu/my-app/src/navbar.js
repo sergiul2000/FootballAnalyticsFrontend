@@ -44,8 +44,8 @@ function MyNavbar() {
               /> */}
               <Button variant="secondary" href="/">Rating Prediction</Button>
             </Form>
-            <Nav.Link href="#deets">Sign in</Nav.Link>
-            <Nav.Link href="#memes">Log in</Nav.Link>
+            {/* <Nav.Link href="#deets">Sign in</Nav.Link>
+            <Nav.Link href="#memes">Log in</Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
